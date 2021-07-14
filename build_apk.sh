@@ -3,5 +3,5 @@
 echo "###############开始构建#################"
 cd ${WORKSPACE}
 ls
-./gradlew clean assembleDebug
+./gradlew clean assembleDebug --stacktrace
 echo "###############构建结束#################"
