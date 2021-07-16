@@ -2,6 +2,7 @@
 
 echo "###############开始构建#################"
 buildType=$1
+echo $buildType
 
 cd ${WORKSPACE}
 ls
