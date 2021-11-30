@@ -2,13 +2,10 @@
 pipeline {
     agent any
     parameters {
-        string(name: 'Greeting', defaultValue: 'Hello', description: 'How should I greet the world?')
+        choice(name: 'buildType', choices: 'Debug\nRelease', description: "构建类型")
+        booleanParam(name: 'isNotify', defaultValue: false, description: '是否邮件通知')
     }
     stages {
-        stage('Example') {
-            steps {
-                echo "${params.Greeting} World!"
-            }
-        }
+
     }
 }
