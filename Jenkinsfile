@@ -6,6 +6,11 @@ pipeline {
         booleanParam(name: 'isNotify', defaultValue: false, description: '是否邮件通知')
     }
     stages {
+        stage('clean') {
 
+        }
+        stage('checkOut') {
+
+        }
     }
 }
